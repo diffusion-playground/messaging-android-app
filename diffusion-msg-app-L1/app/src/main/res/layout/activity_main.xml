@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btStartApp"
+        android:layout_width="388dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/start_app"
+        android:gravity="center"
+        android:onClick="startApp"
+        android:paddingRight="10dp"
+        android:text="@string/start_app"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/app_name"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/diffusionService"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="@string/diffusion_service"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/chatRoom"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/diffusion_chat_room"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diffusionService"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/user_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

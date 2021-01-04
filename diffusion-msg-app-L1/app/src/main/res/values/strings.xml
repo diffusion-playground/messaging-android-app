@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RT Messaging App Tutorial</string>
+    <string name="start_app">Start APP</string>
+    <string name="send">Send</string>
+    <string name="message_hint">Type your message here</string>
+    <string name="profile_me">My Profile</string>
+    <string name="profile_other">Other profile</string>
+    <string name="display_name">Display Name:</string>
+    <string name="user_name">User Name:</string>
+    <string name="user_password">Password:</string>
+    <string name="diffusion_service">Diffusion Service:</string>
+    <string name="diffusion_chat_room">Diffusion Chat Room:</string>
+</resources>
